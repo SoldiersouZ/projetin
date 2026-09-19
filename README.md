@@ -262,7 +262,7 @@ http://localhost:3000
 | Método | Rota                           | Descrição                   |
 | ------ | ------------------------------ | --------------------------- |
 | `GET`  | `/api/status`                  | Verifica o status da API    |
-| `GET`  | `/api/livros/pesquisa?titulo=` | Pesquisa livros pelo título |
+| `GET`  | `/api/livros/` | Pesquisa livros pelo título |
 
 ### 🔎 Exemplo de pesquisa
 

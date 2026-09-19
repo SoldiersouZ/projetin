@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
         novoCard.className = 'livro-card';
         novoCard.innerHTML = `
           <div class="livro-capa">
-            <img src="${capaUrl}" alt="Capa de ${livro.titulo}" onerror="this.src='https://via.placeholder.com/300x400?text=Sem+Capa'">
+            <img src="${capaUrl}" alt="Capa de ${livro.titulo}" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x400?text=Sem+Capa'">
           </div>
           <div class="livro-info">
             <span class="livro-tipo">LIVRO</span>
