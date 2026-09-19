@@ -1,0 +1,16 @@
+O grupo possui 3 ou 4 integrantes.               []
+
+Todos acessam o repositório.                     []
+
+O backend inicia sem erro.                       []
+
+O frontend chama somente o backend.              []
+
+A consulta externa está no service.              []
+
+As camadas estão separadas.                      []
+
+Cinco ou mais resultados aparecem na tela.       []
+
+Validações e mensagens funcionam.               []
+

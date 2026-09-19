@@ -1,0 +1,13 @@
+-- Link do repositorio do grupo                                              []
+
+-- Rota /api/status respondendo com HTTP 200.                                []
+
+-- Pesquisa funcionando pela interface.                                      []
+
+-- Aba Network mostrando que o frontend chamou o backend.                    []
+
+-- Resultados reais aparecendo na tela.                                      []
+
+-- README atualizado com integrantes e responsabilidades.                    []
+
+-- Commits distribuídos entre os integrantes.                                []

@@ -1,0 +1,22 @@
+Requisitos da entrega 
+1. Criar as pastas frontend e backend.                                                   []
+
+2. Inicializar o backend e instalar Express, CORS, Mongoose e dotenv.                    []
+
+3. Organizar o backend em config, routes, controllers, services e models.                []
+
+4. Criar o servidor Express e a rota GET /api/status.                                    []
+
+5. Criar no frontend um formulário para pesquisar pelo título.                           []
+
+6. Criar GET /api/livros/pesquisa?titulo=.                                               []
+
+7. Validar o título recebido pelo backend.                                               []
+
+8. Consultar a Open Library dentro do service.                                           []
+
+9. Transformar a resposta externa em um formato próprio.                                 []
+
+10. Mostrar no frontend pelo menos cinco resultados com título, autor e ano.             []
+
+11. Exibir mensagens de carregamento, nenhum resultado e erro.                           []
