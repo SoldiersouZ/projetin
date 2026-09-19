@@ -267,7 +267,7 @@ http://localhost:3000
 ### 🔎 Exemplo de pesquisa
 
 ```http
-GET /api/livros/pesquisa?titulo=Harry%20Potter
+GET /api/livros/Harry
 ```
 
 O backend recebe o título pesquisado, processa a solicitação através da camada de serviço e realiza a consulta à Open Library.
