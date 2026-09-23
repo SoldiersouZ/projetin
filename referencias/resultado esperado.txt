@@ -1,0 +1,25 @@
+O usuario devera digitar o titulo de um livro no frontend          []
+
+enviar a pesquisa ao backend                                       []
+
+visualizar resultados reais da Open Library na tela.               []
+
+Nesta entrega ainda nao sera exigido salvar no MongoDB.            [] 
+
+
+
+
+
+============================= Codigos HTTP esperados =================================
+
+
+------- Codigo --------------------- Situacao ---------------   
+|                      |                                    |
+|         200          |        Pesquisa realizada          |
+|                      |                                    |
+|         400          |  Titulo nao informado ou invalido  |
+|                      |                                    |
+|         404          |      Nenhum livro encontrado       |
+|                      |                                    |
+|         500          |      Falha ao consultar a API      |
+|______________________|____________________________________|

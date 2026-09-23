@@ -1,0 +1,9 @@
+Frontend com HTML, CSS e JavaScript                                     []
+
+Backend com Node.js e Express                                           []
+
+Open Library API                                                        []
+
+O frontend devera chamar somente o backend.                             []
+
+Nao podera acessar diretamente a Open Library.                          []

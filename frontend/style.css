@@ -1,0 +1,599 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #ffffff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.tela {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  min-height: 700px;
+}
+
+
+.topo-tributo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.menu-esq {
+  display: flex;
+  gap: 35px;
+}
+
+.texto-fundo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.texto-senna,
+.texto-ayrton {
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.829);
+  line-height: 0.8;
+  position: absolute;
+  z-index: 9999;
+}
+
+.texto-senna {
+  font-size: 17vw;
+  top: 32%;
+  left: 13%;
+  z-index: 9999;
+}
+
+.texto-ayrton {
+  font-size: 15vw;
+  bottom: 10%;
+  right: 6%;
+  z-index: 9999;
+}
+
+.barra-branca1 {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 100px;
+  height: 10px;
+  bottom: 60%;
+  right: 18%;
+  z-index: 9999;
+}
+
+.barra-branca2 {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 4px;
+  width: 85px;
+  height: 10px;
+  bottom: 64%;
+  right: 42%;
+  z-index: 9999;
+}
+
+
+.imagem-central {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.imagem-central img {
+  height: 100%;
+  object-fit: cover;
+  z-index: -9999;
+  opacity: 100%;
+}
+
+.conteudo-frente {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.bloco-maior-idolo {
+  position: absolute;
+  top: 25%;
+  right: 12%;
+  text-align: right;
+}
+
+.bloco-maior-idolo h1 {
+  font-size: 46px;
+  line-height: 1.1;
+  font-weight: 900;
+  font-family: 'Impact', sans-serif;
+  letter-spacing: 1px;
+}
+
+.bloco-legado {
+  position: absolute;
+  bottom: 12%;
+  left: 8%;
+  pointer-events: auto;
+}
+
+.bloco-legado p {
+  font-size: 15px;
+  line-height: 1.4;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.bloco-legado hr {
+  border: 0;
+  height: 1px;
+  background: rgba(233, 3, 3, 0.4);
+  margin-bottom: 15px;
+  width: 200px;
+}
+
+.bloco-legado strong {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+
+.bloco-foto-secundaria {
+  position: absolute;
+  opacity: 45%;
+  bottom: 0%;
+  right: 12%;
+  width: 320px;
+  pointer-events: auto;
+  border: none;
+}
+
+.bloco-foto-secundaria img {
+  width: 100%;
+  height: auto;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.mclaren-section {
+  width: 100%;
+  padding: 70px 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mclaren-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+  gap: 30px;
+}
+
+.mclaren-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #e90303;
+  margin-bottom: 10px;
+}
+
+.mclaren-header h2 {
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  font-size: 42px;
+  line-height: 1;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+
+.mclaren-viewer {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  background: radial-gradient(circle at 50% 40%, #1a1a1a 0%, #0a0a0a 75%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mclaren-viewer model-viewer {
+  width: 100%;
+  height: 100%;
+  --poster-color: transparent;
+}
+
+
+@media (max-width: 1000px) {
+  .mclaren-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mclaren-texto {
+    text-align: left;
+    max-width: none;
+  }
+
+  .mclaren-viewer {
+    height: 380px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mclaren-section {
+    padding: 50px 25px;
+  }
+
+  .mclaren-header h2 {
+    font-size: 34px;
+  }
+
+  .mclaren-viewer {
+    height: 300px;
+  }
+}
+
+.footer-senna {
+  position: relative;
+  width: 100%;
+  padding: 40px 60px;
+  background-color: #0a0a0a;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-tributo span {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.footer-tributo .footer-destaque {
+  color: #f5c518;
+}
+
+.senna-video {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.senna-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+}
+
+.senna-quadro img {
+  width: 30%;
+  border: none;
+  transform: translateY(-30px);
+}
+
+.senna-moldura img {
+  position: absolute;
+  z-index: 9999;
+  width: 18%;
+  border: none;
+  top: 30%;
+  left: 0.30%;
+}
+
+.fundo-footer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 20%;
+}
+
+.fundo-footer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.senna-trofeus-1 {
+  position: relative; 
+  width: 100%;
+}
+
+.senna-trofeus-2 {
+  position: relative; 
+  width: 100%;
+}
+
+.senna-trofeus-3 {
+  position: relative; 
+  width: 100%;
+}
+
+
+.senna-trofeus img { 
+  position: absolute; 
+  top: 45%; 
+  left: 25%;
+  width: 10%; 
+  height: auto;
+  z-index: 99999; 
+}
+
+.senna-trofeus2 img { 
+  position: absolute; 
+  top: 45%; 
+  left: 50%;
+  width: 14%; 
+  height: auto;
+  z-index: 99999; 
+}
+
+.senna-trofeus3 img { 
+  position: absolute; 
+  top: 42%; 
+  left: 75%;
+  width: 14%; 
+  height: auto;
+  z-index: 99999; 
+}
+
+
+
+.livros-section {
+  width: 100%;
+  margin-top: 70px;
+  padding: 70px 60px 90px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.livros-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  gap: 30px;
+}
+
+.livros-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #e90303;
+  margin-bottom: 10px;
+}
+
+.livros-header h2 {
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  font-size: 42px;
+  line-height: 1;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+
+.livros-busca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.livros-busca input {
+  width: 260px;
+  height: 45px;
+  padding: 0 16px;
+  background: #151515;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  outline: none;
+  font-family: inherit;
+  font-size: 13px;
+  transition: 0.25s ease;
+}
+
+.livros-busca input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.livros-busca input:focus {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.livros-busca button {
+  height: 45px;
+  padding: 0 22px;
+  background: #ffffff;
+  color: #0d0d0d;
+  border: none;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.livros-busca button:hover {
+  background: #e90303;
+  color: #ffffff;
+}
+
+
+.livros-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+.livro-card {
+  min-width: 0;
+  background: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.livro-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.25);
+  background-color: #151515;
+}
+
+
+.livro-capa {
+  width: 100%;
+  height: 280px;
+  background: #1a1a1a;
+  overflow: hidden;
+}
+
+.livro-capa img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.livro-info {
+  padding: 20px;
+}
+
+.livro-tipo {
+  display: block;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #e90303;
+  margin-bottom: 10px;
+}
+
+.livro-info h3 {
+  font-size: 19px;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.livro-info p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 6px;
+}
+
+.livro-ano {
+  display: block;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.35);
+  margin-bottom: 20px;
+}
+
+.livro-btn {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.livro-btn:hover {
+  background: #ffffff;
+  color: #0d0d0d;
+  border-color: #ffffff;
+}
+
+
+@media (max-width: 1000px) {
+  .livros-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .livros-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .livros-busca {
+    width: 100%;
+  }
+
+  .livros-busca input {
+    flex: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .livros-section {
+    padding: 50px 25px 70px;
+  }
+
+  .livros-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .livros-header h2 {
+    font-size: 34px;
+  }
+
+  .livros-busca {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .livros-busca input,
+  .livros-busca button {
+    width: 100%;
+  }
+}

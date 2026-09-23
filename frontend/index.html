@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayrton Senna</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+  <div class="tela">
+
+    <header class="topo-tributo">
+      <div class="menu-esq">
+        <span>1980 1990</span>
+        <span>FÓRMULA 1</span>
+        <span>BRASIL</span>
+      </div>
+      <div class="camp">
+        <span>Tricampeão: 1988; 1990; 1991</span>
+      </div>
+    </header>
+
+    <div class="texto-fundo">
+      <span class="texto-senna">SENNA</span>
+      <span class="texto-ayrton">AYRTON</span>
+    </div>
+
+    <div class="barra-branca1">
+    </div>
+
+    <div class="barra-branca2">
+    </div>
+
+    <div class="imagem-central">
+      <img src="assets/senna.png" alt="Ayrton Senna">
+    </div>
+
+    <div class="conteudo-frente">
+      <div class="bloco-maior-idolo">
+        <h1>O MAIOR ÍDOLO<br>BRASILEIRO</h1>
+      </div>
+
+      <div class="bloco-legado">
+        <p>Senna é um dos maiores ídolos do esporte brasileiro<br>e sua morte deixou um legado dentro e fora
+          das<br>pistas.</p>
+        <hr>
+        <strong>EXÍMIO SER HUMANO E<br>PROFISSIONAL</strong>
+      </div>
+
+      <div class="bloco-foto-secundaria">
+        <img src="assets/senna2.png" alt="Ayrton Senna sorrindo">
+      </div>
+    </div>
+
+  </div>
+
+  <section class="mclaren-section">
+    <div class="mclaren-header">
+      <div>
+        <span class="mclaren-label">GARAGEM</span>
+        <h2>MCLAREN MP4/5 (1989-1990)</h2>
+      </div>
+    </div>
+
+    <div class="mclaren-viewer">
+      <model-viewer
+        src="assets/3d/mclaren_mp45__www.vecarz.com.glb"
+        alt="Modelo 3D do McLaren MP4/5 de Ayrton Senna"
+        camera-controls
+        auto-rotate
+        auto-rotate-delay="0"
+        rotation-per-second="18deg"
+        interaction-prompt="none"
+        shadow-intensity="0.8"
+        exposure="0.9"
+        camera-orbit="35deg 75deg 105%"
+        field-of-view="30deg">
+      </model-viewer>
+    </div>
+  </section>
+
+  <footer class="footer-senna">
+    <span class="footer-destaque">AYRTON SENNA</span>
+    <span>FÓRMULA 1 &nbsp; • &nbsp; BRASIL</span>
+
+    <div class="senna-video">
+      <video src="" autoplay muted playsinline loop></video>
+    </div>
+
+    <div class="senna-video">
+      <video src="" autoplay muted playsinline loop></video>
+    </div>
+
+    <div class="senna-quadro">
+      <img src="assets/quadro.jpg" alt="Quadro Ayrton Senna">
+    </div>
+
+    <div class="senna-moldura">
+      <img src="assets/moldura.jpg" alt="Moldura Ayrton Senna">
+    </div>
+
+    <div class="container-trofeu">
+      <div class="senna-trofeus">
+        <img src="./assets/trofeu1.png" class="trofeu-1" alt="Troféu-1">
+      </div>
+      <div class="senna-trofeus2">
+        <img src="./assets/trofeu2.png" class="trofeu-2" alt="Troféu-2">
+      </div>
+      <div class="senna-trofeus3">
+        <img src="./assets/trofeu3.png" class="trofeu-3" alt="Troféu-3">
+      </div>
+    </div>
+
+    <div class="fundo-footer">
+      <img src="./assets/footer.jpg" alt="Fundo Footer">
+    </div>
+  </footer>
+
+  <section class="livros-section">
+    <div class="livros-header">
+      <div>
+        <span class="livros-label">BIBLIOTECA</span>
+        <h2>EXPLORE LIVROS</h2>
+      </div>
+
+      <div class="livros-busca">
+        <input type="text" placeholder="Buscar livro..." id="busca-livro">
+        <button id="btn-buscar">BUSCAR</button>
+      </div>
+    </div>
+
+    <div class="livros-grid"></div>
+  </section>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
