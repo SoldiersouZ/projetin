@@ -156,7 +156,7 @@ projetin-main/
 | `backend/services`    | Comunicação e regras relacionadas aos serviços externos       |
 | `frontend`            | Interface e arquivos do cliente                               |
 | `frontend/assets`     | Recursos visuais utilizados pela interface                    |
-| `frontend/frames`     | Elementos utilizados na composição da interface               |
+| `frontend/3d`         | Elementos 3D utilizados na composição da interface            |
 | `referencias`         | Documentação e materiais de referência do projeto             |
 
 ---
